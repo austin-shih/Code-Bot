@@ -1,0 +1,32 @@
+
+# Install the conda environment by running 
+# the following command in your conda base environment:
+# conda env create -f chatbot.yaml 
+name: chatbot
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pip
+  - scikit-learn
+  - sentence-transformers
+  - altair_saver
+  - matplotlib[version='>=3.2.2']
+  - pandas[version='==2.2.2']
+  - ipykernel
+  - nbconvert
+  - requests[version='>=2.24.0']
+  - selenium
+  - altair
+  - pip:
+    - argparse
+    - docling
+    - transformers
+    - dash-bootstrap-components
+    - dash
+    - plotly
+    - vegafusion[embed]
+    - altair-data-server
+    - regex
+    - vl-convert-python
+    
